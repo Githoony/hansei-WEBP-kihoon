@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>여행일기</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<link href="./index.css" rel="stylesheet" />
+
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg bg-light">
+			<div class="container-fluid">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+					<a class="navbar-brand" href="./index.html">전국 여행일기</a>
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+					
+
+					<form class="d-flex" action="http://www.google.co.kr/search" method="get" target="_blank">
+						<input class="form-control me-2" type=text name=q size=25 maxlength=255 value="" placeholder="google search"/>
+						<input type=submit name=btnG value="Google 검색" class="btn btn-outline-success"/>
+					</form>
+
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+		crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./raphael_min.js"></script>
+	<script type="text/javascript" src="./raphael_path_s.korea.js"></script>
+	<script>
+		var sca = '01';
+	</script>
+	<br /><br />
+
+	<div class="left">
+
+		<div style="width:100%; height:600px;">
+			<br /><br /><br />
+			<div id="canvas">
+
+				<div id="south"></div>
+				<div id="seoul">
+					<h2>서울특별시</h2>
+				</div>
+				<div id="gygg">
+					<h2>경기도</h2>
+				</div>
+				<div id="incheon">
+					<h2>인천광역시</h2>
+				</div>
+				<div id="gangwon">
+					<h2>강원도</h2>
+				</div>
+				<div id="chungbuk">
+					<h2>충청북도</h2>
+				</div>
+				<div id="chungnam">
+					<h2>충청남도</h2>
+				</div>
+				<div id="daejeon">
+					<h2>대전광역시</h2>
+				</div>
+				<div id="sejong">
+					<h2>세종특별자치시</h2>
+				</div>
+				<div id="gwangju">
+					<h2>광주광역시</h2>
+				</div>
+				<div id="jeonbuk">
+					<h2>전라북도</h2>
+				</div>
+				<div id="jeonnam">
+					<h2>전라남도</h2>
+				</div>
+				<div id="gyeongbuk">
+					<h2>경상북도</h2>
+				</div>
+				<div id="gyeongnam">
+					<h2>경상남도</h2>
+				</div>
+				<div id="daegu">
+					<h2>대구광역시</h2>
+				</div>
+				<div id="busan">
+					<h2>부산광역시</h2>
+				</div>
+				<div id="ulsan">
+					<h2>울산광역시</h2>
+				</div>
+				<div id="jeju">
+					<h2>제주특별자치도</h2>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="right">
+
+		<iframe id="previewer" class="right" src="">
+			
+		</iframe>
+	
+	</div>
+
+
+</body>
+
+</html>

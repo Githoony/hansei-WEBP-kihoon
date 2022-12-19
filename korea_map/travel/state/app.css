@@ -1,0 +1,172 @@
+div#card {
+    float: left;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.image-upload {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#chooseFile {
+    visibility: hidden;
+}
+
+.fileContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fileInput {
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px black;
+    width: 10%;
+    height: 30px;
+}
+
+#fileName {
+    margin-left: 5px;
+}
+
+.buttonContainer {
+    width: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 0.8em;
+
+    cursor: pointer;
+}
+
+.image-show {
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+
+.img {
+    position: absolute;
+}
+
+.li {
+    list-style: none;
+}
+
+.img {
+    width: 300px;
+    height: 300px;
+}
+
+.real-upload {
+    display: none;
+}
+
+.image-preview {
+    width: 770px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.upload-Bt {
+    width: 100px;
+    height: 50px;
+}
+
+.size {
+    width: 900px;
+    height: 600px;
+}
+
+li {
+    list-style: none;
+  }
+
+  img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .real-upload {
+    display: none;
+  }
+
+  .image-preview {
+    width: 770px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+  .upload-Bt{
+    width: 100px;
+    height: 50px;
+  }
+
+  .size{
+    width: 900px;
+    height: 600px;
+  }
+  li {
+    list-style: none;
+  }
+
+  img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .real-upload {
+    display: none;
+  }
+
+  .image-preview {
+    width: 770px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+  .upload-Bt{
+    width: 100px;
+    height: 50px;
+  }
+
+  .size{
+    width: 900px;
+    height: 600px;
+  }
