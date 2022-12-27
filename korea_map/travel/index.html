@@ -23,11 +23,12 @@
 				<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 					<a class="navbar-brand" href="./index.html">전국 여행일기</a>
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
-					
 
-					<form class="d-flex" action="http://www.google.co.kr/search" method="get" target="_blank">
-						<input class="form-control me-2" type=text name=q size=25 maxlength=255 value="" placeholder="google search"/>
-						<input type=submit name=btnG value="Google 검색" class="btn btn-outline-success"/>
+
+					<form class="d-flex" action="http://www.google.co.kr/search" method="get" target="_blank" id="검색">
+						<input class="form-control me-2" type=text name=q size=20 maxlength=255 value=""
+							placeholder="google search" />
+						<input type=submit name=btnG value="검색" class="btn btn-outline-success" />
 					</form>
 
 				</div>
@@ -106,16 +107,34 @@
 			</div>
 
 		</div>
+
 	</div>
+
 
 	<div class="right">
 
 		<iframe id="previewer" class="right" src="">
-			
+
 		</iframe>
-	
+
 	</div>
 
+	<div id="map" style="width:500px;height:400px;"></div>
+	<script type="text/javascript"
+	src="//dapi.kakao.com/v2/maps/sdk.js?appkey=59bebf331231ccb706c34ce57e0bdaa9"></script> 
+	
+	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(37.34359116960805,126.95385373620903), // 한세대학교이공관 좌표
+			level: 3
+		};
+		var map = new kakao.maps.Map(container, options);
+	</script>
+	<!--
+		카카오 맵 API를 사용하여 지도를 하나 띄우려했으나 웹사이트 형성은 됐으나(https://githoony.github.io/hansei-Kihoon-Webprograming)
+		카카오 Web 플랫폼 등록에서 자꾸 오류가 나서 지도API는 띄우는데 실패했다.
+	-->
 
 </body>
 
